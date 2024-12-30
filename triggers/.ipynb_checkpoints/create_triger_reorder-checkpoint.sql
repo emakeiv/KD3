@@ -1,0 +1,3 @@
+CREATE TRIGGER triger_reorder
+AFTER INSERT OR UPDATE ON "Inventory"
+FOR EACH ROW EXECUTE PROCEDURE reorder_trigger(5);
